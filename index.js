@@ -22,7 +22,7 @@ anchors.forEach((anchor) => {
 window.addEventListener('popstate', (e) => {
     console.log(e);
 
-    if (e.state.pageTitle) {
+    if (e.state?.pageTitle) {
         document.title = e.state.pageTitle;
     }
     
